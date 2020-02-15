@@ -4,7 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
+import java.util.List;
+
 
 @Entity
 @Table(name = "profiles")
@@ -21,7 +22,6 @@ public class Profile implements Serializable {
 
     @Column(name = "last_name")
     private String lastName;
-
 
     @Column(name = "middle_name")
     private String middleName;
@@ -48,10 +48,9 @@ public class Profile implements Serializable {
     @JoinTable(name = "projects_to_profiles",
             joinColumns = @JoinColumn(name = "fk_profile_id"),
             inverseJoinColumns = @JoinColumn(name = "fk_project_id"))
-    private Set<Project> projects;
+    private List<Project> projects;
 
     public Profile() {
-
     }
 
 

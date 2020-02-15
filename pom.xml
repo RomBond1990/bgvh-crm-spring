@@ -22,12 +22,14 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
 
+    <app.version>0.0.1-SNAPSHOT</app.version>
     <servlet.version>3.0.1</servlet.version>
     <spring.version>5.2.2.RELEASE</spring.version>
     <spring.data.version>2.1.5.RELEASE</spring.data.version>
     <hibernate.version>5.4.2.Final</hibernate.version>
     <mysql.version>5.1.48</mysql.version>
     <lombok.version>1.18.12</lombok.version>
+    <dozer.version>5.5.1</dozer.version>
   </properties>
 
   <dependencies>
