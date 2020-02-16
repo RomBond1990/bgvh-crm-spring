@@ -10,5 +10,5 @@ public interface GroupService  {
 
     void saveGroup(GroupBean group);
 
-    void deleteGroup (GroupBean groupId);
+    void deleteGroup (Integer groupId);
 }

@@ -1,12 +1,13 @@
 package com.rbondarovich;
 
+import com.rbondarovich.beans.TaskProjectStateBean;
 import com.rbondarovich.dao.entities.TaskProjectState;
 
 public interface TaskProjectStateService {
 
-    Iterable<TaskProjectState> getAllTaskProjectStates();
+    Iterable<TaskProjectStateBean> getAllTaskProjectStates();
 
-    TaskProjectState getTaskProjectStateById(Integer taskProjectStateId);
+    TaskProjectStateBean getTaskProjectStateById(Integer taskProjectStateId);
 
     void saveTaskProjectState (TaskProjectState taskProjectState);
 

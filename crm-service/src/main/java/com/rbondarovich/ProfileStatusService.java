@@ -6,7 +6,7 @@ public interface ProfileStatusService {
 
     Iterable<ProfileStatusBean> getAllProfileStatuses();
 
-    ProfileStatusBean getProfileById(Integer profileStatusId);
+    ProfileStatusBean getProfileStatusById(Integer profileStatusId);
 
     void saveProfileStatus(ProfileStatusBean profile);
 
